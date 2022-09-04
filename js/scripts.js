@@ -21,7 +21,7 @@ function questionOne(text) {
       csharpCount++;
     }
   });
-  if (pythonCount === 1) {
+  if (pythonCount > jsCount && pythonCount > csharpCount) {
     return pythonCount;
   }
   else if (jsCount > pythonCount && jsCount > csharpCount) {
@@ -52,7 +52,7 @@ function questionTwo(text) {
       csharpCount++;
     }
   });
-  if (pythonCount === 1) {
+  if (pythonCount > jsCount && pythonCount > csharpCount) {
     return pythonCount;
   }
   else if (jsCount > pythonCount && jsCount > csharpCount) {
